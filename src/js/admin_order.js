@@ -6,6 +6,7 @@ function loadOrders() {
         .then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 const orderItem = doc.data();
+                
                 const orderId = doc.id; // Lấy ID của tài liệu
                 htmls += `
                     <tr class="product-item text-center">
