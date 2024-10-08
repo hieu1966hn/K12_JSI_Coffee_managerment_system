@@ -1,0 +1,54 @@
+
+
+body {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/054/239/267/large/chill-jazz-coffee-thumbnai.jpg?1664091148');
+}
+
+.auth-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.auth-container .box {
+    color: var(--color-white);
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 32px 40px;
+}
+.box form {
+    /* margin-top: 32px; */
+}
+.box .form-group {
+    background-color: #232a31;
+}
+.box input {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--color-white);
+    height: 100%;
+    padding: 10px;
+}
+.box input:focus {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.box .form-group .icon,
+.box input::placeholder {
+    color: #878787;
+}
+.box .form-group .icon {
+    display: inline-block;
+    padding: 0 8px;
+}
+.box .btn-primary {
+    display: block;
+    padding: 12px 0px !important;
+}

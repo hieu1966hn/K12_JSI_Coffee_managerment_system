@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <!-- Boostrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/all.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    
+    <div class="auth-container">
+        <div class="box rounded-md">
+            <h3 class="text-center">Coffee Management System</h3>
+            <h4 class="text-center py-3 text-primary">Đăng nhập</h4>
+            <form action="" id="login-form">
+                <div class="form-group d-flex align-items-center rounded-sm mb-4">
+                    <span class="icon"><i class="fa-light fa-envelope"></i></span>
+                    <input type="email" class="form-control inp-email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group d-flex align-items-center rounded-sm mb-4">
+                    <span class="icon"><i class="fa-light fa-lock"></i></span>
+                    <input type="password" class="form-control inp-pwd" placeholder="Password">
+                </div>
+                <div class="">
+                    <button type="submit" class="form-control btn btn-primary">Đăng nhập</button>
+                    <p class="text-center mt-4">
+                        <span>Chưa có tài khoản?</span>
+                        <a href="./register.html" class="ms-1">Đăng ký</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+
+    <!-- Boostrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-storage-compat.js"></script>
+    
+    <!-- Firebase Auth -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.13.1/firebase-auth-compat.min.js" integrity="sha512-b2PGOE6ClpdFR5WZylPqJ9NEtHyGtdXKIe5wI0qRKVg3VeH9Km8CvihpnySwf6v21TV2cMTUp/BuglUiFLB38Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Functions -->
+    <script>
+        let userSession = JSON.parse(localStorage.getItem('user_session'));
+    </script>
+    <script src="../js/firebase-config.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

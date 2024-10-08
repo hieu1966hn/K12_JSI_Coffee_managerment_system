@@ -1,0 +1,83 @@
+:root {
+    /* --color-primary: #CD5C08; */
+    --color-primary: #982B1C;
+    --color-danger: #B8001F;
+    --color-primary-blur: rgba(184, 0, 31, .8);
+    --color-black: #000;
+    --color-white: #fff;
+    --color-input-dark: #0B192C;
+    --color-grey: #5c5c5e;
+    --color-grey-light: #dcdcdc;
+}
+
+/* rounded */
+.rounded-sm {
+    border-radius: 4px;
+}
+.rounded-md {
+    border-radius: 8px;
+}
+
+/*  */
+.btn-primary {
+    background-color: var(--color-primary);
+    border: none;
+}
+.btn-primary:hover {
+    background-color: var(--color-primary);
+    opacity: 0.9;
+}
+.btn-grey {
+    background-color: #d1d1d1;
+    border: none;
+}
+.btn-danger {
+    background-color: var(--color-danger) !important;
+    color: var(--color-white);
+}
+.btn-cancle {
+    margin: 8px 0px;
+    border: 1px solid var(--color-grey);
+}
+/* text */
+.text-primary {
+    color: var(--color-primary) !important;
+}
+.text-danger {
+    color: var(--color-danger);
+}
+
+/* background */
+.bg-grey-light {
+    background-color: var(--color-grey-light)
+}
+
+/* box shadow */
+.shadow-md {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+/* layout */
+.page-wrapper {
+    min-height: 100vh
+}
+.sidebar {
+    background-color: var(--color-black);
+}
+.sidebar .menu {
+    list-style: none;
+}
+.sidebar .menu a {
+    text-decoration: none;
+}
+.sidebar .menu a:hover {
+    background-color: var(--color-grey);
+}
+
+/*  */
+.product-table .product-item img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}

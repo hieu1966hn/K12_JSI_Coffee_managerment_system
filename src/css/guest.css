@@ -1,0 +1,108 @@
+.banner-group {
+    background-image: url('../img/header-bg.jpg.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    background-color: rgba(0, 0, 0, .75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+header .nav-link {
+    color: var(--color-white);
+}
+header .icon {
+    font-size: 20px;
+}
+header .profile button {
+    background: none;
+    border: none;
+    color: var(--color-white);
+}
+.banner-text {
+    padding: 120px;
+}
+.banner-text .title {
+    font-size: 3rem;
+}
+footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+footer .content {
+    padding: 140px 0px;
+    color: var(--color-white);
+}
+footer .footer-form {
+    border-radius: 4px;
+    background-color: var(--color-white);
+}
+footer .footer-form input{
+    background: none;
+    border: none;
+    flex: 80%;
+}
+
+.dropdown-menu {
+    padding: 0px;
+    border-radius: 8px;
+}
+.page-content {
+    margin-top: 100px;
+}
+.product-list .product-item .content{
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.product-list .product-item img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Order form */
+.order-form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 6;
+}
+.order-form .content {
+    position: absolute;
+    min-width: 600px;
+    background-color: var(--color-white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.order-form .content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.order-form .btn-cancle {
+}
+.order-form .btn-cancle .icon{
+    /* font-size: 25px; */
+}
+
+/*  */
+.order-list .order-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
